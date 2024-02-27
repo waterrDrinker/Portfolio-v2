@@ -1,0 +1,45 @@
+.header {
+  max-width: 102.4rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+.bg-top-gradient {
+  margin: 0 auto;
+
+  .blue-element {
+    position: absolute;
+    top: 0;
+    transform: translate3d(21.979rem, -6.2rem, 0);
+    height: 17.863rem;
+    width: 56.976rem;
+    background-color: var(--bg-blue-element);
+    border-radius: 100%;
+    filter: blur(10rem);
+    z-index: -5;
+  }
+
+  .yellow-element {
+    position: absolute;
+    top: 0;
+    transform: translate3d(61.374rem, -6.185rem, 0);
+    height: 13.812rem;
+    width: 56.976rem;
+    border-radius: 100%;
+    background-color: var(--bg-yellow-element);
+    filter: blur(10rem);
+    z-index: -5;
+  }
+
+  .red-element {
+    position: absolute;
+    top: 0;
+    transform: translate3d(44.291rem, -8.285rem, 0);
+    height: 26.334rem;
+    width: 56.976rem;
+    border-radius: 100%;
+    background-color: var(--bg-red-element);
+    filter: blur(10rem);
+    z-index: -5;
+  }
+}

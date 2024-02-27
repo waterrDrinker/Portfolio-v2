@@ -1,0 +1,53 @@
+.container {
+  max-width: 144rem;
+  min-height: 32.6rem;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.footer {
+  max-width: 102.4rem;
+  margin: 0 auto;
+}
+
+.bg-bottom-gradient {
+
+  .blue-element {
+    position: absolute;
+    bottom: 0;
+    transform: translate3d(61.029rem, 8.58rem, 0);
+    height: 17.863rem;
+    width: 56.976rem;
+    background-color: var(--bg-blue-element);
+    border-radius: 100%;
+    filter: blur(8rem);
+    z-index: -5;
+  }
+
+  .yellow-element {
+    position: absolute;
+    bottom: 0;
+    transform: translate3d(11.889rem, 8.567rem, 0);
+    height: 13.812rem;
+    width: 56.976rem;
+    border-radius: 100%;
+    background-color: var(--bg-yellow-element);
+    filter: blur(8rem);
+    z-index: -5;
+  }
+
+  .red-element {
+    position: absolute;
+    bottom: 0;
+    transform: translate3d(33.162rem, 11.19rem, 0);
+    height: 26.334rem;
+    width: 56.976rem;
+    border-radius: 100%;
+    background-color: var(--bg-red-element);
+    filter: blur(8rem);
+    z-index: -5;
+  }
+}
+
+
+

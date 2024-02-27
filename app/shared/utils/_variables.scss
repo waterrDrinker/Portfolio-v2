@@ -1,0 +1,62 @@
+:root {
+  // basic
+  --black: #0D0D0D;
+  --white: #FFFFFF;
+  --onyx: #181818;
+  --dark-grey: #808080;
+  --medium-grey: rgba(128, 128, 128, 0.5);
+  --light-grey: #C5C5C5;
+  --light-blue: #C5C5C5;
+  --light-red: rgba(233, 63, 64, 0.43);
+  --light-yellow: rgba(255, 184, 0, 0.43);
+
+  // dark
+  --card-border-dark: #383737;
+  --white-10per: rgba(255, 255, 255, 0.1);
+  --white-25per: rgba(255, 255, 255, 0.25);
+  --white-70per: rgba(255, 255, 255, 0.7);
+  --black-50per: rgba(21, 21, 21, 0.5);
+
+  // light
+  --faint-white: #F3F3F3;
+  --card-border-light: #EBEBEB;
+  --card-bg: #F6F6F6;
+  --black-10per: rgb(21, 21, 21, 0.1);
+
+  // gradient
+  --dark-gradient: linear-gradient(to bottom, #1A1A1A, #131313);
+  --bg-blue-element: rgba(63, 100, 233, 0.43);
+  --bg-yellow-element: rgba(255, 184, 0, 0.43);
+  --bg-red-element: rgba(233, 63, 63, 0.43);
+
+  // elements
+  --main-bg: #FBFBFB;
+
+  //titles
+  --title-text-color: var(--onyx);
+
+  //btns
+  --bg-secondary-btn: var(--faint-white);
+  --text-secondary-btn: var(--onyx);
+
+  --text-btn: var(--onyx);
+}
+
+[data-theme='dark'] {
+  --main-bg: #0D0D0D;
+
+  //titles
+  --title-text-color: var(--white);
+
+  //btns
+  --sd-primary-btn:
+          inset 0 1px 2px 0 rgba(255, 255, 255, 0.02),
+          inset 0 2px 4px 0 rgba(255, 255, 255, 0.08),
+          0 7px 4px 0 rgba(0, 0, 0, 0.15);
+
+  --bg-secondary-btn: var(--faint-white);
+  --text-secondary-btn: var(--onyx);
+
+  --text-btn: var(--white);
+}
+
