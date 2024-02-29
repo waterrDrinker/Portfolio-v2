@@ -1,0 +1,71 @@
+.top-blue-element {
+  position: absolute;
+  top: 0;
+  transform: translate3d(23.077rem, -6.2rem, 0);
+  height: 17.863rem;
+  width: 59.825rem;
+  background-color: var(--bg-blue-element);
+  border-radius: 100%;
+  filter: blur(10rem);
+  z-index: -5;
+}
+
+.top-yellow-element {
+  position: absolute;
+  top: 0;
+  transform: translate3d(64.39rem, -6.185rem, 0);
+  height: 13.812rem;
+  width: 59.825rem;
+  border-radius: 100%;
+  filter: blur(10rem);
+  background-color: var(--bg-yellow-element);
+  z-index: -5;
+}
+
+.top-red-element {
+  position: absolute;
+  top: 0;
+  transform: translate3d(46.505rem, -8.285rem, 0);
+  height: 26.334rem;
+  width: 59.825rem;
+  border-radius: 100%;
+  filter: blur(10rem);
+  background-color: var(--bg-red-element);
+  z-index: -5;
+}
+
+.bottom-blue-element {
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(64.281rem, 8.58rem, 0);
+  height: 22.31rem;
+  width: 74.719rem;
+  background-color: var(--bg-blue-element);
+  border-radius: 100%;
+  filter: blur(7rem);
+  z-index: -5;
+}
+
+.bottom-yellow-element {
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(12.683rem, 8.567rem, 0);
+  height: 17.25rem;
+  width: 74.719rem;
+  border-radius: 100%;
+  background-color: var(--bg-yellow-element);
+  filter: blur(9rem);
+  z-index: -5;
+}
+
+.bottom-red-element {
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(35.021rem, 11.19rem, 0);
+  height: 32.89rem;
+  width: 74.719rem;
+  border-radius: 100%;
+  background-color: var(--bg-red-element);
+  filter: blur(9rem);
+  z-index: -5;
+}

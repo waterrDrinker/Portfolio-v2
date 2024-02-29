@@ -12,16 +12,17 @@
 
   // dark
   --card-border-dark: #383737;
-  --white-10per: rgba(255, 255, 255, 0.1);
-  --white-25per: rgba(255, 255, 255, 0.25);
-  --white-70per: rgba(255, 255, 255, 0.7);
   --black-50per: rgba(21, 21, 21, 0.5);
+  --black-30per: rgb(24, 24, 29, 0.3);
+  --black-10per: rgb(21, 21, 21, 0.1);
 
   // light
   --faint-white: #F3F3F3;
   --card-border-light: #EBEBEB;
   --card-bg: #F6F6F6;
-  --black-10per: rgb(21, 21, 21, 0.1);
+  --white-10per: rgba(255, 255, 255, 0.1);
+  --white-25per: rgba(255, 255, 255, 0.25);
+  --white-70per: rgba(255, 255, 255, 0.7);
 
   // gradient
   --dark-gradient: linear-gradient(to bottom, #1A1A1A, #131313);
@@ -32,8 +33,16 @@
   // elements
   --main-bg: #FBFBFB;
 
+  // header & footer
+  --header-bg: var(--white-25per);
+  --header-text-links: var(--onyx);
+  --footer-text: var(--onyx);
+
   //titles
   --title-text-color: var(--onyx);
+
+  // text
+  --main-text: var(--onyx);
 
   //btns
   --bg-secondary-btn: var(--faint-white);
@@ -44,6 +53,11 @@
 
 [data-theme='dark'] {
   --main-bg: #0D0D0D;
+
+  // header
+  --header-bg: var(--black-30per);
+  --header-text-links: var(--white-70per);
+  --footer-text: var(--white-70per);
 
   //titles
   --title-text-color: var(--white);

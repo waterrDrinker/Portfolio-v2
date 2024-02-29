@@ -10,6 +10,7 @@ html {
 
 html, body {
   height: 100%;
+  line-height: 1.2;
 }
 
 body {
@@ -17,11 +18,24 @@ body {
   font-weight: 400;
   color: var(--dark-grey);
   background-color: var(--main-bg);
+  transition: background-color ease-in-out 300ms;
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
   max-width: 102.4rem;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 151.2rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0 1.6rem;
 }
 
 .title {
@@ -57,5 +71,25 @@ body {
   display: flex;
   column-gap: 0.8rem;
   color: var(--text-btn);
+}
+
+.icon {
+  transition:
+    filter ease-in-out 300ms,
+    transform ease-in-out 300ms;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+[data-theme='dark'] .icon {
+  filter: invert(100%) opacity(0.75);
 }
 

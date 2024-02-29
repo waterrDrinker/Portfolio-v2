@@ -2,24 +2,60 @@
 
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted)
+    return (
+      <Image
+        src={'/icons/light/Sun.svg'}
+        alt="theme-sw"
+        width={24}
+        height={24}
+        className="icon select-none"
+      />
+    );
 
-  return (
-    <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
-  );
+  if (resolvedTheme === 'dark') {
+    return (
+      <button
+        className="flex justify-center items-center"
+        onClick={() => setTheme('light')}
+      >
+        <Image
+          src={'/icons/light/Sun.svg'}
+          alt="theme-sw"
+          width={24}
+          height={24}
+          className="icon select-none"
+        />
+      </button>
+    );
+  }
+
+  if (resolvedTheme === 'light') {
+    return (
+      <button
+        className="flex justify-center items-center"
+        onClick={() => setTheme('dark')}
+      >
+        <Image
+          src={'/icons/light/Sun.svg'}
+          alt="theme-sw"
+          width={24}
+          height={24}
+          className="icon"
+        />
+      </button>
+    );
+  }
 };
 
 export default ThemeSwitch;
