@@ -1,0 +1,47 @@
+@use '../../../shared/utils/mixins' as m;
+
+.container {
+  position: relative;
+  transform: translateX(4.3rem);
+  margin: 0 auto;
+  margin-bottom: 22rem;
+  max-width: 110.9rem;
+  padding-top: 4.9rem;
+  padding-bottom: 15.5rem;
+
+  .content {
+    max-width: 72.9rem;
+
+    @include m.apply-margin-bottom-to-children-except-last(4rem);
+
+    p {
+      line-height: 1.5;
+      font-size: 2.4rem;
+      font-weight: 500;
+      mix-blend-mode: plus-lighter;
+    }
+
+    h1 > span {
+      color: var(--main-text);
+    }
+  }
+}
+
+.photo-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  .photo {
+    position: relative;
+    width: 54rem;
+    height: 54rem;
+    border-radius: 100%;
+
+    img {
+      position: absolute;
+      border-radius: 100%;
+    }
+  }
+}

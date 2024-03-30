@@ -1,0 +1,10 @@
+@use '@styles-utils/mixins' as m;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include m.container;
+  margin-bottom: 11.4rem;
+}

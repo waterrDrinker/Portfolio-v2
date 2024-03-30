@@ -11,10 +11,10 @@
   border-radius: 1.2rem;
   color: var(--header-text-links);
   transition: color ease-in-out 300ms;
-}
 
-[data-theme='dark'] .header  {
-  border: 1px solid transparent;
+  [data-theme='dark'] & {
+    border: 1px solid transparent;
+  }
 }
 
 .nav-links {

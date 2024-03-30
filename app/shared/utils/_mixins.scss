@@ -1,0 +1,10 @@
+@mixin container{
+  margin: 0 auto;
+  max-width: 102.4rem;
+}
+
+@mixin apply-margin-bottom-to-children-except-last($margin) {
+  > *:not(:last-child) {
+    margin-bottom: $margin;
+  }
+}

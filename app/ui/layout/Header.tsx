@@ -3,11 +3,11 @@ import Image from 'next/image';
 import styles from './Header.module.scss';
 
 import ThemeSwitch from '@/app/ui/ThemeSwitch';
-import HeaderDropdown from '@/app/ui/layout/HeaderDropdown';
+import { HeaderDropdown } from '@/app/ui/layout';
 
 const Header = () => {
   return (
-    <div className="w-full max-w-[144rem] mx-auto mb-[13rem]">
+    <div className="w-full max-w-[144rem] mx-auto mb-[12.1rem]">
       <header className={styles.header}>
         <div id="left-side" className="flex items-center">
           <Link href="#!" className="mr-[4rem]">

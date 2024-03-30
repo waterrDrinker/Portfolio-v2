@@ -1,3 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: hidden;
+  min-height: 32.6rem;
+  border-top: 1px solid var(--black-10per);
+
+  [data-theme='dark'] & {
+    border-top: 1px solid var(--white-10per);
+  }
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -16,14 +30,14 @@
       margin-bottom: 3.2rem;
     }
 
-    .links, .socials {
+    .links,
+    .socials {
       display: flex;
       flex-direction: column;
       row-gap: 1.6rem;
     }
   }
 }
-
 
 .blue-element {
   position: absolute;
@@ -60,7 +74,3 @@
   filter: blur(5rem);
   z-index: -5;
 }
-
-
-
-

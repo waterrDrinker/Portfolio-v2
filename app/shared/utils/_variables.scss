@@ -38,11 +38,11 @@
   --header-text-links: var(--onyx);
   --footer-text: var(--onyx);
 
-  //titles
-  --title-text-color: var(--onyx);
+  //heading
+  --heading-text-color: var(--onyx);
 
   // text
-  --main-text: var(--onyx);
+  --main-text: var(--dark-grey);
 
   //btns
   --bg-secondary-btn: var(--faint-white);
@@ -59,8 +59,8 @@
   --header-text-links: var(--white-70per);
   --footer-text: var(--white-70per);
 
-  //titles
-  --title-text-color: var(--white);
+  //heading
+  --heading-text-color: var(--white);
 
   //btns
   --sd-primary-btn:
@@ -68,9 +68,12 @@
           inset 0 2px 4px 0 rgba(255, 255, 255, 0.08),
           0 7px 4px 0 rgba(0, 0, 0, 0.15);
 
-  --bg-secondary-btn: var(--faint-white);
-  --text-secondary-btn: var(--onyx);
+  --bg-secondary-btn: var(--onyx);
+  --text-secondary-btn: var(--dark-grey);
 
   --text-btn: var(--white);
+
+  //cards
+  --card-bg: var(--onyx);
 }
 

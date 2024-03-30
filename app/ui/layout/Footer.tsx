@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <div className="w-full max-w-[144rem] mx-auto relative overflow-y-hidden min-h-[32.6rem]">
+    <div className={styles.container}>
       <footer className={styles.footer}>
         <div id="left-side" className="text-[1.4rem]">
           <Image

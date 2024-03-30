@@ -1,4 +1,5 @@
 @use '../shared/utils/index';
+@use '../shared/utils/mixins';
 
 @tailwind base;
 @tailwind components;
@@ -16,10 +17,29 @@ html, body {
 body {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--dark-grey);
+  color: var(--main-text);
   background-color: var(--main-bg);
   transition: background-color ease-in-out 300ms;
   overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: var(--heading-text-color);
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
 }
 
 .container {
@@ -38,20 +58,20 @@ body {
   padding: 0 1.6rem;
 }
 
-.title {
-  font-size: 8rem;
-  font-weight: bold;
-  color: var(--title);
+.text {
+  color: var(--dark-grey);
 }
 
-.text {
-  font-size: 2.4rem;
-  color: var(--dark-grey);
+.btn {
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
 .primary-btn {
+  @extend .btn;
+
   display: flex;
+  align-items: center;
   column-gap: 0.8rem;
   background: var(--dark-gradient);
   padding: 1.9rem 3.2rem;
@@ -63,11 +83,14 @@ body {
 .secondary-btn {
   @extend .primary-btn;
 
-  background: var(--onyx);
-  color: var(--dark-grey);
+  box-shadow: none;
+  background: var(--bg-secondary-btn);
+  color: var(--text-secondary-btn);
 }
 
 .text-btn {
+  @extend .btn;
+
   display: flex;
   column-gap: 0.8rem;
   color: var(--text-btn);

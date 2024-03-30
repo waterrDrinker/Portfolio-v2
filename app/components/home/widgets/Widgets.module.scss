@@ -1,0 +1,6 @@
+@use '@styles-utils/mixins' as m;
+
+.container {
+  @include m.container;
+  margin-bottom: 11.4rem;
+}

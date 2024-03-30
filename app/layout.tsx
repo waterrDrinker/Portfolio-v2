@@ -4,9 +4,7 @@ import type { ReactNode } from 'react';
 import './ui/globals.scss';
 import { inter } from './ui/fonts';
 import { Providers } from '@/app/Providers';
-import Header from '@/app/ui/layout/Header';
-import Footer from '@/app/ui/layout/Footer';
-import BgGradient from '@/app/ui/layout/Bg-gradient';
+import { Header, Footer, BgGradient } from '@/app/ui/layout';
 
 export const metadata: Metadata = {
   title: "Grigoriy's portfolio",
@@ -26,7 +24,7 @@ export default function RootLayout({
           <div className="wrapper">
             <BgGradient position="top" />
             <Header />
-            <main className="container flex-1 basis-full">{children}</main>
+            <main className="flex-1 basis-full">{children}</main>
             <Footer />
             <BgGradient position="bottom" />
           </div>

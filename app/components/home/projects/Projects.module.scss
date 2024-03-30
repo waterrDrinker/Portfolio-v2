@@ -1,0 +1,7 @@
+@use '@styles-utils/mixins' as m;
+
+.container {
+  margin-bottom: 10rem;
+
+  @include m.apply-margin-bottom-to-children-except-last(3.2rem);
+}

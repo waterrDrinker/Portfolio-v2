@@ -1,8 +1,40 @@
 import React from 'react';
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+import Link, { LinkProps } from 'next/link';
+interface CommonProps {
   children: React.ReactNode;
+  variant?: string;
 }
-const Button = ({ children, className, ...rest }: ButtonProps) => {
+
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & CommonProps;
+type ButtonLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  LinkProps &
+  CommonProps;
+
+const Button = ({
+  children,
+  variant = 'primary-btn',
+  ...rest
+}: ButtonProps) => {
+  let className;
+
+  switch (variant) {
+    case 'primary':
+      className = 'primary-btn';
+      break;
+
+    case 'secondary':
+      className = 'secondary-btn';
+      break;
+
+    case 'text':
+      className = 'text-btn';
+      break;
+
+    default:
+      className = 'primary-btn';
+      break;
+  }
+
   return (
     <button className={className} {...rest}>
       {children}
@@ -10,4 +42,37 @@ const Button = ({ children, className, ...rest }: ButtonProps) => {
   );
 };
 
-export default Button;
+const ButtonLink = ({
+  children,
+  variant = 'primary-btn',
+  href,
+  ...rest
+}: ButtonLinkProps) => {
+  let className;
+
+  switch (variant) {
+    case 'primary':
+      className = 'primary-btn';
+      break;
+
+    case 'secondary':
+      className = 'secondary-btn';
+      break;
+
+    case 'text':
+      className = 'text-btn';
+      break;
+
+    default:
+      className = 'primary-btn';
+      break;
+  }
+
+  return (
+    <Link href={href} className={className} {...rest}>
+      {children}
+    </Link>
+  );
+};
+
+export { Button, ButtonLink };
