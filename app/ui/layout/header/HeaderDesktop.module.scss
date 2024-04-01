@@ -1,4 +1,6 @@
-.header {
+@use '@styles-utils/breakpoints' as bp;
+
+.container {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -15,6 +17,10 @@
   [data-theme='dark'] & {
     border: 1px solid transparent;
   }
+
+  @include bp.md {
+    display: none;
+  }
 }
 
 .nav-links {
@@ -30,5 +36,3 @@
   column-gap: 2.4rem;
   margin-right: 2.4rem;
 }
-
-

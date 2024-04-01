@@ -1,5 +1,6 @@
-@use '../shared/utils/index';
-@use '../shared/utils/mixins';
+@use '@styles-utils/index';
+@use '@styles-utils/mixins';
+@use '@styles-utils/breakpoints' as bp;
 
 @tailwind base;
 @tailwind components;
@@ -9,37 +10,60 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   line-height: 1.2;
 }
 
 body {
   font-size: 1.6rem;
+  font-size: clamp(1.5rem, 1.497rem + 0.068vw, 1.6rem);
   font-weight: 400;
   color: var(--main-text);
   background-color: var(--main-bg);
   transition: background-color ease-in-out 300ms;
   overflow-x: hidden;
+
+  @include bp.xs {
+    font-size: 1.5rem;
+  }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--heading-text-color);
 }
 
 h1 {
   font-size: 8rem;
+  font-size: clamp(4.8rem, 4.5632vw + 3rem, 8rem);
   font-weight: 800;
+
+  @include bp.xs {
+    font-size: 4.8rem;
+  }
 }
 
 h2 {
   font-size: 4.8rem;
+  font-size: clamp(3.2rem, 3.158rem + 0.4086vw, 4.8rem);
   font-weight: 700;
+
+  @include bp.xs {
+    font-size: 3.2rem;
+  }
 }
 
 h3 {
   font-size: 3.2rem;
+  font-size: clamp(2rem, 1.968rem + 0.815vw, 3.2rem);
   font-weight: 800;
+
+  @include bp.xs {
+    font-size: 2rem;
+  }
 }
 
 .container {
@@ -72,6 +96,7 @@ h3 {
 
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 0.8rem;
   background: var(--dark-gradient);
   padding: 1.9rem 3.2rem;
@@ -115,4 +140,3 @@ h3 {
 [data-theme='dark'] .icon {
   filter: invert(100%) opacity(0.75);
 }
-

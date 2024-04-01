@@ -1,3 +1,5 @@
+@use '@styles-utils/breakpoints' as bp;
+
 .container {
   width: 100%;
   max-width: 144rem;
@@ -18,59 +20,62 @@
   max-width: 102.4rem;
   margin: 3.2rem auto 0;
   color: var(--footer-text);
-  padding: 4.2rem 0;
+  padding: 4.8rem 0;
 
-  .right-side {
-    display: flex;
-    column-gap: 12rem;
-
-    h4 {
-      font-weight: bold;
-      color: var(--title-text-color);
-      margin-bottom: 3.2rem;
-    }
-
-    .links,
-    .socials {
-      display: flex;
-      flex-direction: column;
-      row-gap: 1.6rem;
-    }
+  @include bp.sm {
+    flex-direction: column;
   }
 }
 
-.blue-element {
-  position: absolute;
-  bottom: 0;
-  transform: translate3d(61.029rem, 8.58rem, 0);
-  height: 22.31rem;
-  width: 74.719rem;
-  background-color: var(--bg-blue-element);
-  border-radius: 100%;
-  filter: blur(8rem);
-  z-index: -5;
+.left-side {
+  font-size: 1.4rem;
+  padding-right: 6rem;
+
+  .subtext {
+    margin-bottom: 9.3rem;
+
+    @include bp.sm {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include bp.sm {
+    order: 1;
+    margin-bottom: 6rem;
+  }
 }
 
-.yellow-element {
-  position: absolute;
-  bottom: 0;
-  transform: translate3d(12.683rem, 8.567rem, 0);
-  height: 17.25rem;
-  width: 74.719rem;
-  border-radius: 100%;
-  background-color: var(--bg-yellow-element);
-  filter: blur(8rem);
-  z-index: -5;
-}
+.right-side {
+  display: flex;
+  column-gap: 12rem;
 
-.red-element {
-  position: absolute;
-  bottom: 0;
-  transform: translate3d(31.15rem, 11.19rem, 0);
-  height: 32.89rem;
-  width: 74.719rem;
-  border-radius: 100%;
-  background-color: var(--bg-red-element);
-  filter: blur(5rem);
-  z-index: -5;
+  @include bp.breakpoint(600px) {
+    column-gap: 7rem;
+  }
+
+  @include bp.sm {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  h4 {
+    font-weight: bold;
+    color: var(--title-text-color);
+    margin-bottom: 3.2rem;
+  }
+
+  .links,
+  .socials {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  .links-wrapper {
+    @include bp.sm {
+      order: 1;
+    }
+  }
 }

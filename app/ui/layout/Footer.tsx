@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <footer className={styles.footer}>
-        <div id="left-side" className="text-[1.4rem]">
+        <div id="left-side" className={styles['left-side']}>
           <Image
             src="/icons/light/Logo.svg"
             alt="Logo"
@@ -13,7 +13,7 @@ const Footer = () => {
             width={92.32}
             className="icon mb-[1.6rem]"
           />
-          <p className="mb-[9.3rem] ">
+          <p className={styles.subtext}>
             Thanks for stopping by <span className="text-[2rem]">&#12483;</span>
           </p>
           <p>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div id="right-side" className={styles['right-side']}>
-          <div>
+          <div className={styles['links-wrapper']}>
             <h4>Links</h4>
             <ul className={styles.links}>
               <li>About</li>
@@ -33,7 +33,8 @@ const Footer = () => {
               <li>Contact</li>
             </ul>
           </div>
-          <div>
+          
+          <div className={styles['socials-wrapper']}>
             <h4>Elsewhere</h4>
             <ul className={styles.socials}>
               <li>

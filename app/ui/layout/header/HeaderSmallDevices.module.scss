@@ -1,0 +1,23 @@
+@use '@styles-utils/breakpoints' as bp;
+
+.container {
+  width: 100%;
+
+  @include bp.md-min {
+    display: none;
+  }
+}
+
+.logo {
+  padding-top: 3.2rem;
+
+  .link {
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+
+    img {
+      filter: invert(100%) opacity(0.5);
+    }
+  }
+}

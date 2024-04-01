@@ -1,28 +1,67 @@
 @use '../../../shared/utils/mixins' as m;
+@use '@styles-utils/breakpoints' as bp;
 
 .container {
   position: relative;
-  transform: translateX(4.3rem);
+  transform: translateX(4.2rem);
+  transform: translateX(clamp(0rem, -52.65rem + 50vw, 4.2rem));
   margin: 0 auto;
   margin-bottom: 22rem;
   max-width: 110.9rem;
   padding-top: 4.9rem;
   padding-bottom: 15.5rem;
 
-  .content {
-    max-width: 72.9rem;
+  @include bp.lg {
+    transform: translateX(0);
+  }
 
-    @include m.apply-margin-bottom-to-children-except-last(4rem);
+  @include bp.md {
+    padding-bottom: 0;
+    margin-bottom: 17.8rem;
+  }
 
-    p {
-      line-height: 1.5;
-      font-size: 2.4rem;
-      font-weight: 500;
-      mix-blend-mode: plus-lighter;
+  @include bp.xs {
+    padding-bottom: 0;
+    margin-bottom: 13.7rem;
+  }
+}
+
+.content {
+  max-width: 72.9rem;
+
+  @include m.apply-margin-bottom-to-children-except-last(4rem);
+
+  h1 > span {
+    color: var(--main-text);
+
+    @include bp.xs {
+      &::before {
+        content: 'Hi 👋 ';
+        display: block;
+      }
     }
+  }
 
-    h1 > span {
-      color: var(--main-text);
+  .subtitle {
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-size: clamp(1.5rem, 1.476rem + 0.411vw, 2.4rem);
+    font-weight: 500;
+    mix-blend-mode: plus-lighter;
+
+    @include bp.xs {
+      font-size: 1.5rem;
+    }
+  }
+
+  .btns {
+    display: flex;
+    column-gap: 1.6rem;
+
+    @include bp.sm {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 1.7rem;
     }
   }
 }
@@ -33,15 +72,33 @@
   right: 0;
   z-index: -1;
 
+  @include bp.md {
+    position: initial;
+  }
+
   .photo {
     position: relative;
     width: 54rem;
     height: 54rem;
     border-radius: 100%;
 
+    @include bp.md {
+      margin: 0 auto;
+      width: 35rem;
+      height: 35rem;
+      margin-bottom: 3rem;
+    }
+
+    @include bp.sm {
+      width: 20rem;
+      height: 20rem;
+      margin-bottom: 2rem;
+    }
+
     img {
       position: absolute;
       border-radius: 100%;
+      // filter: blur(50px);
     }
   }
 }

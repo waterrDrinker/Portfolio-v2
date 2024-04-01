@@ -1,0 +1,12 @@
+@use '@styles-utils/breakpoints' as bp;
+
+.container {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  margin-bottom: 12.1rem;
+
+  @include bp.sm {
+    margin-bottom: 4.5rem;
+  }
+}

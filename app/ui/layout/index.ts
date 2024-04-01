@@ -1,6 +1,5 @@
-import Header from './Header';
+import Header from './header/Header';
 import Footer from './Footer';
 import BgGradient from './Bg-gradient';
-import HeaderDropdown from './HeaderDropdown';
 
-export { Header, Footer, BgGradient, HeaderDropdown };
+export { Header, Footer, BgGradient };

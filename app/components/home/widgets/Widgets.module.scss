@@ -1,6 +1,21 @@
 @use '@styles-utils/mixins' as m;
+@use '@styles-utils/breakpoints' as bp;
 
 .container {
   @include m.container;
   margin-bottom: 11.4rem;
+
+  @include bp.xs {
+    margin-bottom: 6rem;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+
+  @include bp.sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
