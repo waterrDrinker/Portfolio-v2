@@ -18,15 +18,19 @@ body {
 
 body {
   font-size: 1.6rem;
-  font-size: clamp(1.5rem, 1.497rem + 0.068vw, 1.6rem);
   font-weight: 400;
   color: var(--main-text);
   background-color: var(--main-bg);
   transition: background-color ease-in-out 300ms;
   overflow-x: hidden;
+}
+
+p {
+  font-size: 1.6rem; /* Fallback font size */
+  font-size: clamp(1.5rem, 1.497rem + 0.068vw, 1.6rem);
 
   @include bp.xs {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Fallback font size for extra small screens */
   }
 }
 
@@ -71,14 +75,18 @@ h3 {
   max-width: 102.4rem;
 }
 
-.wrapper {
+.gradient-wrapper {
+  overflow-y: hidden;
+}
+
+.page-wrapper {
   position: relative;
-  overflow: hidden;
-  max-width: 151.2rem;
+  // overflow: hidden;
+  max-width: 151.2rem; //1512
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
-  min-height: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
   padding: 0 1.6rem;
 }
 

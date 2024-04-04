@@ -21,12 +21,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
         <Providers>
-          <div className="wrapper">
-            <BgGradient position="top" />
-            <Header />
-            <main className="flex-1 basis-full">{children}</main>
-            <Footer />
-            <BgGradient position="bottom" />
+          <div className="gradient-wrapper">
+            <div className="page-wrapper">
+              <BgGradient position="top" />
+              <Header />
+              <main className="flex-1 basis-full">{children}</main>
+              <Footer />
+              <BgGradient position="bottom" />
+            </div>
           </div>
         </Providers>
       </body>

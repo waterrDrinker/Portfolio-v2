@@ -10,12 +10,14 @@
   max-width: 110.9rem;
   padding-top: 4.9rem;
   padding-bottom: 15.5rem;
+  display: flex;
 
   @include bp.lg {
     transform: translateX(0);
   }
 
   @include bp.md {
+    display: block;
     padding-bottom: 0;
     margin-bottom: 17.8rem;
   }
@@ -28,6 +30,11 @@
 
 .content {
   max-width: 72.9rem;
+  flex-shrink: 0.8;
+
+  @include bp.lg {
+    flex-shrink: 1.1;
+  }
 
   @include m.apply-margin-bottom-to-children-except-last(4rem);
 
@@ -78,8 +85,8 @@
 
   .photo {
     position: relative;
-    width: 54rem;
-    height: 54rem;
+    width: 45rem;
+    height: 45rem;
     border-radius: 100%;
 
     @include bp.md {

@@ -30,6 +30,7 @@ const Hero = () => {
           <Button variant="secondary">Get in touch</Button>
         </div>
       </div>
+      <div className="w-full"></div>
     </section>
   );
 };

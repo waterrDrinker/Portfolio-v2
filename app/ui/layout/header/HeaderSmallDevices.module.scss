@@ -2,9 +2,10 @@
 
 .container {
   width: 100%;
+  display: none;
 
-  @include bp.md-min {
-    display: none;
+  @include bp.md {
+    display: block;
   }
 }
 
