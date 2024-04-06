@@ -1,0 +1,81 @@
+{
+  "header": {
+    "nav": [
+      { "title": "About", "href": "/about" },
+      { "title": "Work", "href": "/works" },
+      { "title": "Notebook", "href": "/notes" },
+      { "title": "Contact", "href": "/contact" },
+      { "title": "More", "more": true }
+    ],
+    "dropdown-nav": [
+      { "title": "Bookshelf", "href": "/books" },
+      { "title": "Tech Stack", "href": "/techs" },
+      { "title": "This UI Kit", "href": "/ui" }
+    ]
+  },
+  "home": {
+    "hero": {
+      "pronoun": "I'm",
+      "name": "Grigoriy",
+      "intro": "A front-end engineer helping startups turn their visions into a digital reality. I specialize in designing and building modern mobile and web-based apps.",
+      "resume-btn": "See my resume",
+      "getInTouch": "Get in touch"
+    },
+    "projects": {
+      "title": "Selected work",
+      "works": [
+        {
+          "id": "0",
+          "name": "AlgaTop",
+          "icon": "/icons/works/AlgaTop.svg",
+          "title": "AlgaTop - Store automation service",
+          "text": "As a Frontend Developer, I played a pivotal role in enhancing the user experience and driving sales growth for clients on the Kaspi platform. Leveraging my expertise in frontend development, I contributed to achieving remarkable results, including doubling or tripling sales, elevating clients' stores to the top position, and automating routine tasks effectively.",
+          "presentationImg": "/images/home/works/algatop-screenshot.jpg",
+          "text-btn": "Visit Site"
+        }
+      ]
+    },
+    "widgets": {
+      "title": "Get to know me",
+      "items": [
+        {
+          "id": "0",
+          "title": "About me",
+          "subtitle": "Who I am and what I do",
+          "img": "/images/home/about-face.png"
+        },
+        {
+          "id": "1",
+          "title": "Bookshelf",
+          "subtitle": "Books and pieces of wisdom I’ve enjoyed reading",
+          "img": "/images/home/Bookshelf.png"
+        },
+        {
+          "id": "2",
+          "title": "Tech Stack",
+          "subtitle": "The dev tools, apps, devices, and games I use and play.",
+          "img": "/images/home/Tech-Stack.png"
+        }
+      ]
+    },
+    "contactme": {
+      "title": "Let's work together",
+      "subtitle": "Want to discuss an opportunity to create something great? I’m ready when you are.",
+      "getInTouch": "Get in touch"
+    }
+  },
+  "footer": {
+    "underlogo-text": "Thanks for stopping by",
+    "rights": " Grigoriy N. All Rights Reserved.",
+    "links": {
+      "title": "Links",
+      "links": [
+        { "title": "About", "href": "/about" },
+        { "title": "Work", "href": "/works" },
+        { "title": "Tech Stack", "href": "/techs" },
+        { "title": "Contact", "href": "/contact" }
+      ]
+    },
+    "elsewhere": "Elsewhere"
+  }
+}
