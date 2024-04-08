@@ -27,7 +27,7 @@ const ProjectCard = ({
 }: {
   work?: Work;
   placeholder?: Placeholder;
-  currentLang: Locale;
+  currentLang?: Locale;
 }) => {
   if (work) {
     return (
