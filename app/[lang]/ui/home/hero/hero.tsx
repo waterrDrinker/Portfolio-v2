@@ -17,7 +17,6 @@ const Hero = ({
             <Image
               src="/images/home/photo.jpg"
               alt="photo"
-              objectFit="cover"
               fill
               quality={100}
             />

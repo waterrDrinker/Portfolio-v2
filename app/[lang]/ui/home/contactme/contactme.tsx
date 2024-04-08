@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './contactme.module.scss';
 import { type getDictionary } from '@/get-dictionary';
-import { ButtonLink } from '../../button';
+import { ButtonLink } from '@/app/[lang]/ui';
 import Image from 'next/image';
 import { Locale } from '@/i18n-config';
 

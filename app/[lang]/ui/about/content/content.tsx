@@ -2,7 +2,7 @@ import { type getDictionary } from '@/get-dictionary';
 import styles from './content.module.scss';
 import Paragraph from './paragraph';
 import Image from 'next/image';
-import { ButtonLink } from '../../button';
+import { ButtonLink } from '@/app/[lang]/ui';
 import { Locale } from '@/i18n-config';
 
 const Content = ({

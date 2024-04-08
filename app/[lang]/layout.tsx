@@ -3,8 +3,8 @@ import type { ReactNode } from 'react';
 
 import './ui/globals.scss';
 import { inter } from './ui/fonts';
-import { Providers } from '@/app/[lang]/Providers';
-import { Header, Footer, BgGradient } from '@/app/[lang]/ui/layout';
+import { Providers } from '@/app/[lang]/providers';
+import { Header, Footer, BgGradient } from './ui/layout';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 

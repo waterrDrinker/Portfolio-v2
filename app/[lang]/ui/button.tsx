@@ -10,7 +10,7 @@ type ButtonLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
   LinkProps &
   CommonProps;
 
-const Button = ({
+export const Button = ({
   children,
   variant = 'primary-btn',
   ...rest
@@ -42,7 +42,7 @@ const Button = ({
   );
 };
 
-const ButtonLink = ({
+export const ButtonLink = ({
   children,
   variant = 'primary-btn',
   href,
@@ -74,5 +74,3 @@ const ButtonLink = ({
     </Link>
   );
 };
-
-export { Button, ButtonLink };
