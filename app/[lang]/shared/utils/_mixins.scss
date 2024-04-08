@@ -1,6 +1,17 @@
-@mixin container{
+@mixin page-container{
+  margin: 0 auto;
+  width: 100%;
+
+  @include padding-sides;
+}
+
+@mixin content-container{
   margin: 0 auto;
   max-width: 102.4rem;
+}
+
+@mixin padding-sides {
+  padding: 0 1.6rem;
 }
 
 @mixin apply-margin-bottom-to-children-except-last($margin) {

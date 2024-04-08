@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './Footer.module.scss';
+import styles from './footer.module.scss';
 import { type getDictionary } from '@/get-dictionary';
 import Link from 'next/link';
 
@@ -23,7 +23,7 @@ const Footer = ({
             alt="Logo"
             height={60}
             width={92.32}
-            className="icon mb-[1.6rem]"
+            className="transition-icon mb-[1.6rem]"
           />
           <p className={styles.subtext}>
             {dictionary['underlogo-text']} <span className="text-[2rem]">&#12483;</span>

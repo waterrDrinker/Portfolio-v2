@@ -1,7 +1,7 @@
 import { type getDictionary } from '@/get-dictionary';
-import styles from './Header.module.scss';
-import HeaderDesktop from './HeaderDesktop';
-import HeaderSmallDevices from './HeaderSmallDevices';
+import HeaderDesktop from './header-desktop';
+import HeaderSmallDevices from './header-smalldevices';
+import styles from './header.module.scss';
 import { Locale } from '@/i18n-config';
 
 const Header = ({

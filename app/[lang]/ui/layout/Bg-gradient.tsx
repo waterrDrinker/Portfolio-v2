@@ -1,4 +1,4 @@
-import styles from '@/app/[lang]/ui/layout/Bg-gradient.module.scss';
+import styles from '@/app/[lang]/ui/layout/bg-gradient.module.scss';
 
 const BgGradient = ({ position }: { position: 'top' | 'bottom' }) => {
   if (position === 'top') {

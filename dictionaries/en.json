@@ -1,16 +1,16 @@
 {
   "header": {
     "nav": [
-      { "title": "About", "href": "/about" },
-      { "title": "Work", "href": "/works" },
-      { "title": "Notebook", "href": "/notes" },
-      { "title": "Contact", "href": "/contact" },
+      { "title": "About", "href": "/en/about" },
+      { "title": "Work", "href": "/en/work" },
+      { "title": "Notebook", "href": "/en/notes" },
+      { "title": "Contact", "href": "/en/contact" },
       { "title": "More", "more": true }
     ],
     "dropdown-nav": [
-      { "title": "Bookshelf", "href": "/books" },
-      { "title": "Tech Stack", "href": "/techs" },
-      { "title": "This UI Kit", "href": "/ui" }
+      { "title": "Bookshelf", "href": "/en/books" },
+      { "title": "Tech Stack", "href": "/en/techs" },
+      { "title": "This UI Kit", "href": "/en/ui" }
     ]
   },
   "home": {
@@ -20,20 +20,6 @@
       "intro": "A front-end engineer helping startups turn their visions into a digital reality. I specialize in designing and building modern mobile and web-based apps.",
       "resume-btn": "See my resume",
       "getInTouch": "Get in touch"
-    },
-    "projects": {
-      "title": "Selected work",
-      "works": [
-        {
-          "id": "0",
-          "name": "AlgaTop",
-          "icon": "/icons/works/AlgaTop.svg",
-          "title": "AlgaTop - Store automation service",
-          "text": "As a Frontend Developer, I played a pivotal role in enhancing the user experience and driving sales growth for clients on the Kaspi platform. Leveraging my expertise in frontend development, I contributed to achieving remarkable results, including doubling or tripling sales, elevating clients' stores to the top position, and automating routine tasks effectively.",
-          "presentationImg": "/images/home/works/algatop-screenshot.jpg",
-          "text-btn": "Visit Site"
-        }
-      ]
     },
     "widgets": {
       "title": "Get to know me",
@@ -64,16 +50,49 @@
       "getInTouch": "Get in touch"
     }
   },
+  "about": {
+    "title": "A little bit about me",
+    "subtitle": "Who I am and what I do",
+    "iam-paragraph": {
+      "title": "WHO I AM",
+      "text": "I'm Grigoriy front-end developer from Moscow, Russia 🇷🇺."
+    },
+    "ido-paragraph": {
+      "title": "WHAT I DO",
+      "text": "With one year of invaluable experience in my role at AlgaTop –– a tech company based here in Moscow, I have honed my skills in React.js, Next.js, TailwindCSS, and TypeScript, allowing me to craft seamless and interactive user experiences. During my time at AlgaTop,  I played a pivotal role in enhancing the user experience and driving sales growth for clients on the Kaspi platform. Leveraging my expertise in frontend development, I contributed to achieving remarkable results, including doubling or tripling sales, elevating clients' stores to the top position, and automating routine tasks effectively."
+    },
+    "closing-text": "Feel free to reach out via e-mail, or write me on Telegram.",
+    "appeal": "Let’s build something great.",
+    "getInTouch": "Get in touch"
+  },
+  "work": {
+    "title": "Work",
+    "subtitle": "Projects and ideas I’ve worked on"
+  },
+  "projects": {
+    "title": "Selected work",
+    "works": [
+      {
+        "id": "0",
+        "name": "AlgaTop",
+        "icon": "/icons/works/AlgaTop.svg",
+        "title": "AlgaTop - Store automation service",
+        "text": "As a Frontend Developer, I played a pivotal role in enhancing the user experience and driving sales growth for clients on the Kaspi platform. Leveraging my expertise in frontend development, I contributed to achieving remarkable results, including doubling or tripling sales, elevating clients' stores to the top position, and automating routine tasks effectively.",
+        "presentationImg": "/images/home/works/algatop-screenshot.jpg",
+        "text-btn": "Visit Site"
+      }
+    ]
+  },
   "footer": {
     "underlogo-text": "Thanks for stopping by",
     "rights": " Grigoriy N. All Rights Reserved.",
     "links": {
       "title": "Links",
       "links": [
-        { "title": "About", "href": "/about" },
-        { "title": "Work", "href": "/works" },
-        { "title": "Tech Stack", "href": "/techs" },
-        { "title": "Contact", "href": "/contact" }
+        { "title": "About", "href": "/en/about" },
+        { "title": "Work", "href": "/en/work" },
+        { "title": "Tech Stack", "href": "/en/techs" },
+        { "title": "Contact", "href": "/en/contact" }
       ]
     },
     "elsewhere": "Elsewhere"

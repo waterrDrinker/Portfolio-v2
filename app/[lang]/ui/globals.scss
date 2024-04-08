@@ -1,5 +1,5 @@
 @use '@styles-utils/index';
-@use '@styles-utils/mixins';
+@use '@styles-utils/mixins' as m;
 @use '@styles-utils/breakpoints' as bp;
 
 @tailwind base;
@@ -70,9 +70,32 @@ h3 {
   }
 }
 
-.container {
+.subtitle {
+  line-height: 1.5;
+  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 1.322rem + 0.713vw, 2.4rem);
+
+  @include bp.xs {
+    font-size: 1.6rem;
+  }
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 100%;
+
+  @include m.padding-sides;
+}
+
+.content-container {
   margin: 0 auto;
   max-width: 102.4rem;
+}
+
+.head-page-content-container {
+  @extend .content-container;
+
+  margin-bottom: 6rem;
 }
 
 .gradient-wrapper {
@@ -87,7 +110,7 @@ h3 {
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 0 1.6rem;
+  padding-left: calc(100vw - 100%); /* to prevent scrollbar shifting */
 }
 
 .text {
@@ -128,11 +151,10 @@ h3 {
   column-gap: 0.8rem;
   color: var(--text-btn);
 }
+//telegram-icon
 
 .icon {
-  transition:
-    filter ease-in-out 300ms,
-    transform ease-in-out 300ms;
+  filter: invert(100%);
 
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -145,6 +167,36 @@ h3 {
   -ms-user-select: none;
 }
 
-[data-theme='dark'] .icon {
-  filter: invert(100%) opacity(0.75);
+.transition-icon {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  transition:
+    filter ease-in-out 300ms,
+    transform ease-in-out 300ms;
+
+  [data-theme='dark'] & {
+    filter: invert(100%) opacity(0.75);
+  }
+}
+
+.telegram-icon {
+  @extend .icon;
+  
+  filter: none;
+}
+
+.underline {
+  border-top: 1px solid var(--black-10per);
+
+  [data-theme='dark'] & {
+    border-top: 1px solid var(--white-10per);
+  }
 }

@@ -32,6 +32,7 @@ export default async function RootLayout({
               <BgGradient position="top" />
               <Header dictionary={dictionary.header} currentLang={params.lang} />
               <main className="flex-1 basis-full">{children}</main>
+              <hr className='underline'/>
               <Footer dictionary={dictionary.footer} />
               <BgGradient position="bottom" />
             </div>

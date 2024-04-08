@@ -1,4 +1,4 @@
-import { Contactme, Hero, Projects, Widgets } from '@/app/[lang]/components/home';
+import { Contactme, Hero, Projects, Widgets } from '@/app/[lang]/ui/home';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 
@@ -8,9 +8,9 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
   return (
     <>
       <Hero dictionary={dictionary.home.hero} />
-      <Projects dictionary={dictionary.home.projects} />
+      <Projects dictionary={dictionary.projects} />
       <Widgets dictionary={dictionary.home.widgets} />
-      <Contactme dictionary={dictionary.home.contactme} />
+      <Contactme dictionary={dictionary.home.contactme} currentLang={params.lang} />
     </>
   );
 }

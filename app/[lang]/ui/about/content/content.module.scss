@@ -1,0 +1,60 @@
+@use '@styles-utils/mixins' as m;
+@use '@styles-utils/breakpoints' as bp;
+
+.page-container {
+  @include m.page-container;
+
+  margin-bottom: 10.7rem;
+}
+
+.content-container {
+  display: flex;
+  column-gap: 7.5rem;
+
+  @include m.content-container;
+  margin-top: 6rem;
+}
+
+.text-content {
+  max-width: 60.5rem;
+
+  p {
+    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 1.396rem + 0.267vw, 1.8rem);
+
+    @include bp.xs {
+      font-size: 1.5rem;
+    }
+  }
+
+  .closing-text {
+    margin-bottom: 6.9rem;
+  }
+}
+
+.main-text {
+  @include m.apply-margin-bottom-to-children-except-last(3.2rem);
+  margin-bottom: 6rem;
+}
+
+.photo-content {
+  .image-wrapper {
+    border: 1px solid transparent;
+    border-radius: 1.095rem;
+    margin-bottom: 10rem;
+    
+    [data-theme='dark'] & {
+      border: 1px solid #323232;
+    }
+  
+    .portrait {
+      border-radius: 1.095rem;
+    }
+  }
+
+  .button-wrapper {
+    margin: 0 auto;
+    max-width: 20.1rem;
+  }
+}
+

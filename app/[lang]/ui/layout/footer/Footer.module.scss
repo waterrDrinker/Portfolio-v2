@@ -1,3 +1,4 @@
+@use '@styles-utils/mixins' as m;
 @use '@styles-utils/breakpoints' as bp;
 
 .container {
@@ -7,11 +8,8 @@
   position: relative;
   overflow-y: hidden;
   min-height: 32.6rem;
-  border-top: 1px solid var(--black-10per);
-
-  [data-theme='dark'] & {
-    border-top: 1px solid var(--white-10per);
-  }
+  
+  @include m.padding-sides;
 }
 
 .footer {
