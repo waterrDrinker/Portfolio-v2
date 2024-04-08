@@ -10,6 +10,13 @@
   max-width: 102.4rem;
 }
 
+@mixin head-page-container {
+  @include content-container;
+  
+  margin-top: 6.5rem;
+  margin-bottom: 6rem;
+}
+
 @mixin padding-sides {
   padding: 0 1.6rem;
 }

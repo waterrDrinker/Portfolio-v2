@@ -5,6 +5,13 @@
   @include m.page-container;
 
   margin-bottom: 10.7rem;
+
+  @include bp.md {
+    margin-bottom: 9rem;
+  }
+  @include bp.sm {
+    margin-bottom: 5.7rem;
+  }
 }
 
 .content-container {
@@ -13,6 +20,10 @@
 
   @include m.content-container;
   margin-top: 6rem;
+
+  @include bp.md {
+    flex-direction: column;
+  }
 }
 
 .text-content {
@@ -29,15 +40,30 @@
 
   .closing-text {
     margin-bottom: 6.9rem;
+
+    @include bp.md {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  @include bp.md {
+    margin-bottom: 5.4rem; //12.7
+    order: 1
   }
 }
 
 .main-text {
   @include m.apply-margin-bottom-to-children-except-last(3.2rem);
   margin-bottom: 6rem;
+
+  @include bp.md {
+    margin-bottom: 5rem;
+  }
 }
 
 .photo-content {
+  flex-shrink: 0;
+  
   .image-wrapper {
     border: 1px solid transparent;
     border-radius: 1.095rem;
@@ -50,11 +76,33 @@
     .portrait {
       border-radius: 1.095rem;
     }
+
+    @include bp.md {
+      margin-bottom: 6.5rem;
+    }
   }
 
   .button-wrapper {
     margin: 0 auto;
     max-width: 20.1rem;
+
+    @include bp.md {
+      display: none;
+    }
+  }
+}
+
+.button-wrapper--outside {
+  display: none;
+  order: 2;
+  max-width: 20.1rem;
+  
+  @include bp.md {
+    display: block;
+  }
+
+  @include bp.sm {
+    max-width: 100%;
   }
 }
 

@@ -1,7 +1,6 @@
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
-import { HeadPage } from '../../ui';
-import { Content } from '../../ui/work';
+import { Content, HeadPage } from '../../ui/work';
 
 const WorkPage = async ({ params }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(params.lang);

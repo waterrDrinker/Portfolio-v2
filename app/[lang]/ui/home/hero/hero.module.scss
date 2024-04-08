@@ -3,6 +3,14 @@
 
 .page-container {
   @include m.page-container;
+
+  @include bp.md {
+    margin-top: 12.1rem;
+  }
+
+  @include bp.sm {
+    margin-top: 4.5rem;
+  }
 }
 
 .content-container {

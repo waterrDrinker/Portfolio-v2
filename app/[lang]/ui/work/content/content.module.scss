@@ -6,6 +6,10 @@
 
   margin-top: 6rem;
   margin-bottom: 10.8rem;
+
+  @include bp.sm {
+    margin-bottom: 8.6rem;
+  }
 }
 
 .content-container {

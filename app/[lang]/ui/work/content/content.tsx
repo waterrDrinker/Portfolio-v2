@@ -17,6 +17,7 @@ const Content = ({
     <section id='projects' className={styles['page-container']}>
       <div className={styles['content-container']}>
         {works}
+        <ProjectCard placeholder={dictionary.placeholder} currentLang={currentLang} />
       </div>
     </section>
   );

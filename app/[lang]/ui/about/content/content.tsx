@@ -48,16 +48,29 @@ const Content = ({
           </div>
           <div className={styles['button-wrapper']}>
             <ButtonLink href={`/${currentLang}/contact`}>
-                <Image
-                  src='/icons/light/send.svg'
-                  alt='send-icon'
-                  className='icon'
-                  width={24}
-                  height={24}
-                />
+              <Image
+                src="/icons/light/send.svg"
+                alt="send-icon"
+                className="icon"
+                width={24}
+                height={24}
+              />
               {dictionary.getInTouch}
             </ButtonLink>
           </div>
+        </div>
+
+        <div className={styles['button-wrapper--outside']}>
+          <ButtonLink href={`/${currentLang}/contact`}>
+            <Image
+              src="/icons/light/send.svg"
+              alt="send-icon"
+              className="icon"
+              width={24}
+              height={24}
+            />
+            {dictionary.getInTouch}
+          </ButtonLink>
         </div>
       </div>
     </div>

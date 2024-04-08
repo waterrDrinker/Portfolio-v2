@@ -82,7 +82,13 @@
         "presentationImg": "/images/home/works/algatop-screenshot.jpg",
         "text-btn": "Перейти на сайт"
       }
-    ]
+    ],
+    "placeholder": {
+      "title": "ВАШ ПРОЕКТ ЗДЕСЬ",
+      "subtitle": "Давайте превратим вашу идею в визуальную реальность",
+      "icon": "/icons/light/stars.svg",
+      "getInTouch": "Связаться"
+      }
   },
   "footer": {
     "underlogo-text": "Спасибо за визит",

@@ -81,7 +81,13 @@
         "presentationImg": "/images/home/works/algatop-screenshot.jpg",
         "text-btn": "Visit Site"
       }
-    ]
+    ],
+    "placeholder": {
+      "title": "YOUR PROJECT GOES HERE",
+      "subtitle": "Let’s turn your idea into a visual reality",
+      "icon": "/icons/light/stars.svg",
+      "getInTouch": "Get in touch"
+    }
   },
   "footer": {
     "underlogo-text": "Thanks for stopping by",
