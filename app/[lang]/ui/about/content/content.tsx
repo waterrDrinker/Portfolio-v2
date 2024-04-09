@@ -54,6 +54,7 @@ const Content = ({
                 className="icon"
                 width={24}
                 height={24}
+                priority
               />
               {dictionary.getInTouch}
             </ButtonLink>

@@ -19,6 +19,7 @@ const Hero = ({
               alt="photo"
               fill
               quality={100}
+              priority
             />
           </div>
         </div>

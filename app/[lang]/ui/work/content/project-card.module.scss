@@ -98,6 +98,7 @@
 
     img {
       filter: invert(50%);
+      transition: filter ease-in-out 300ms;
 
       [data-theme='dark'] & {
         filter: opacity(1);
