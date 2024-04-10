@@ -4,7 +4,6 @@ import Paragraph from './paragraph';
 import Image from 'next/image';
 import { ButtonLink } from '@/app/[lang]/ui';
 import { Locale } from '@/i18n-config';
-import reactStringReplace from 'react-string-replace';
 
 const Content = ({
   dictionary,
