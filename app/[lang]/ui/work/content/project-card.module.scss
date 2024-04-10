@@ -5,9 +5,9 @@
   display: flex;
   max-width: 102.4rem;
   min-height: 56.5rem;
-  background-color: var(--card-bg);
   border-radius: 3.2rem;
   padding: 6rem;
+  @include m.card;
 
   @include bp.sm {
     padding: 4rem;

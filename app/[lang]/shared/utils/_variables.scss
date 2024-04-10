@@ -11,15 +11,12 @@
   --light-yellow: rgba(255, 184, 0, 0.43);
 
   // dark
-  --card-border-dark: #383737;
   --black-50per: rgba(21, 21, 21, 0.5);
   --black-30per: rgb(24, 24, 29, 0.3);
   --black-10per: rgb(21, 21, 21, 0.1);
 
   // light
   --faint-white: #F3F3F3;
-  --card-border-light: #EBEBEB;
-  --card-bg: #F6F6F6;
   --white-10per: rgba(255, 255, 255, 0.1);
   --white-25per: rgba(255, 255, 255, 0.25);
   --white-70per: rgba(255, 255, 255, 0.7);
@@ -49,6 +46,10 @@
   --text-secondary-btn: var(--onyx);
 
   --text-btn: var(--onyx);
+
+  //cards
+  --card-bg: #F6F6F6;
+  --card-border: #EBEBEB;
 }
 
 [data-theme='dark'] {
@@ -75,5 +76,6 @@
 
   //cards
   --card-bg: var(--onyx);
+  --card-border: #383737;
 }
 

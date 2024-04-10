@@ -14,7 +14,9 @@ const Projects = ({
     <section id='projects' className={styles['page-container']}>
       <div className={styles['content-container']}>
         <h2 className="title">{dictionary.title}</h2>
-        {works}
+        <ul>
+          {works}
+        </ul>
       </div>
     </section>
   );

@@ -20,11 +20,13 @@ const Content = ({
   return (
     <section id="projects" className={styles['page-container']}>
       <div className={styles['content-container']}>
-        {works}
-        <ProjectCard
-          placeholder={dictionary.placeholder}
-          currentLang={currentLang}
-        />
+        <ul className={styles['cards-wrapper']}>
+          {works}
+          <ProjectCard
+            placeholder={dictionary.placeholder}
+            currentLang={currentLang}
+          />
+        </ul>
       </div>
     </section>
   );

@@ -31,7 +31,7 @@ const ProjectCard = ({
 }) => {
   if (work) {
     return (
-      <div className={styles['project-card']}>
+      <li className={styles['project-card']}>
         <div className={styles.content}>
           <Image
             className={styles.logo}
@@ -63,13 +63,13 @@ const ProjectCard = ({
             height={320}
           />
         </div>
-      </div>
+      </li>
     );
   }
 
   if (placeholder) {
     return (
-      <div className={styles['placeholder-card']}>
+      <li className={styles['placeholder-card']}>
         <div className={styles['icon-wrapper']}>
           <Image
             src={placeholder.icon}
@@ -90,7 +90,7 @@ const ProjectCard = ({
           />
           {placeholder.getInTouch}
         </ButtonLink>
-      </div>
+      </li>
     );
   }
 };

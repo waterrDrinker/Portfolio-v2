@@ -4,6 +4,7 @@ import Paragraph from './paragraph';
 import Image from 'next/image';
 import { ButtonLink } from '@/app/[lang]/ui';
 import { Locale } from '@/i18n-config';
+import reactStringReplace from 'react-string-replace';
 
 const Content = ({
   dictionary,
@@ -12,6 +13,21 @@ const Content = ({
   dictionary: Awaited<ReturnType<typeof getDictionary>>['about'];
   currentLang: Locale;
 }) => {
+  const wordsArray = dictionary['closing-text'].split(' ')
+  const closingText = wordsArray.map((word, i) => {
+    switch(word) {
+      case 'e-mail':
+        wordsArray[i + 1] = " " + wordsArray[i + 1];
+        return (<a className={styles.link} href='mailto:grigoriynbr@gmail.com'>e-mail</a>)
+
+      case 'Telegram.':
+        return (<a className={styles.link} href='https://t.me/hzrglpoqasd'>Telegram.</a>)
+
+      default:
+        return word + " ";
+    }
+  })  
+  
   return (
     <div className={styles['page-container']}>
       <div className={styles['content-container']}>
@@ -28,7 +44,7 @@ const Content = ({
           </div>
 
           <div className={styles['closing-text']}>
-            <p>{dictionary['closing-text']}</p>
+            <p>{...closingText}</p>
           </div>
 
           <div className={styles['appeal-text']}>

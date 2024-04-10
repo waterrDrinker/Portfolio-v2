@@ -14,6 +14,8 @@
 
 .content-container {
   @include m.content-container;
-  
-  @include m.apply-margin-bottom-to-children-except-last(1.6rem);
+
+  .cards-wrapper {
+    @include m.apply-margin-bottom-to-children-except-last(1.6rem);
+  }
 }

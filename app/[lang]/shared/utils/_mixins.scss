@@ -27,6 +27,13 @@
   }
 }
 
-@mixin gradient-transform-translate($minX, $maxX, $minY, $maxY) {
-  
+@mixin card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

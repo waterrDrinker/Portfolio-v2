@@ -41,6 +41,11 @@
   .closing-text {
     margin-bottom: 6.9rem;
 
+    .link {
+      color: var(--heading-text-color);
+      border-bottom: 1px solid  ;
+    }
+    
     @include bp.md {
       margin-bottom: 3.5rem;
     }

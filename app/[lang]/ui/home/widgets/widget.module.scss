@@ -6,6 +6,7 @@
   background-color: var(--card-bg);
   border: 1px solid #ebebeb;
   border-radius: 3.2rem;
+  overflow: hidden;
 
   [data-theme='dark'] & {
     border: 1px solid transparent;
@@ -24,6 +25,9 @@
 
     @include bp.md {
       padding-top: 4rem;
+    }
+    @include bp.xs {
+      padding-top: 3.2rem;
     }
   }
 }

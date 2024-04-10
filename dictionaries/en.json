@@ -39,7 +39,7 @@
         {
           "id": "2",
           "title": "Tech Stack",
-          "subtitle": "The dev tools, apps, devices, and games I use and play.",
+          "subtitle": "The dev tools I use.",
           "img": "/images/home/Tech-Stack.png"
         }
       ]
@@ -61,7 +61,7 @@
       "title": "WHAT I DO",
       "text": "With one year of invaluable experience in my role at AlgaTop –– a tech company based here in Moscow, I have honed my skills in React.js, Next.js, TailwindCSS, and TypeScript, allowing me to craft seamless and interactive user experiences. During my time at AlgaTop,  I played a pivotal role in enhancing the user experience and driving sales growth for clients on the Kaspi platform. Leveraging my expertise in frontend development, I contributed to achieving remarkable results, including doubling or tripling sales, elevating clients' stores to the top position, and automating routine tasks effectively."
     },
-    "closing-text": "Feel free to reach out via e-mail, or write me on Telegram.",
+    "closing-text": "Feel free to reach out via e-mail or write me on Telegram.",
     "appeal": "Let’s build something great.",
     "getInTouch": "Get in touch"
   },
@@ -87,6 +87,65 @@
       "subtitle": "Let’s turn your idea into a visual reality",
       "icon": "/icons/light/stars.svg",
       "getInTouch": "Get in touch"
+    }
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "The dev tools I use.",
+    "content": {
+      "title": "Front-end",
+      "tech-items": [
+        {
+          "name": "HTML",
+          "logo": "/images/techs/html-logo.svg",
+          "tag": "Language"
+        },
+        {
+          "name": "CSS",
+          "logo": "/images/techs/css-logo.svg",
+          "tag": "Language"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "/images/techs/js-logo.svg",
+          "tag": "Language"
+        },
+        {
+          "name": "Git",
+          "logo": "/images/techs/git-logo.svg",
+          "tag": "Version Control"
+        },
+        {
+          "name": "React",
+          "logo": "/images/techs/react-logo.svg",
+          "tag": "Library"
+        },
+        {
+          "name": "Sass",
+          "logo": "/images/techs/sass-logo.svg",
+          "tag": "Extension Language"
+        },
+        {
+          "name": "TypeScript",
+          "logo": "/images/techs/ts-logo.svg",
+          "tag": "Language"
+        },
+        {
+          "name": "Tailwind",
+          "logo": "/images/techs/tailwind-logo.svg",
+          "tag": "Framework"
+        },
+        {
+          "name": "Next.js",
+          "logo": "/images/techs/nextjs-logo.svg",
+          "tag": "Framework"
+        },
+        {
+          "name": "Redux",
+          "logo": "/images/techs/redux-logo.svg",
+          "tag": "State Manager"
+        }
+      ]
     }
   },
   "footer": {

@@ -62,7 +62,7 @@
   "title": "ЧЕМ Я ЗАНИМАЮСЬ",
   "text": "Обладая годом ценного опыта в своей роли в AlgaTop –– технологической компании находящейся здесь, в Москве, я отточил свои навыки в React.js, Next.js, TailwindCSS и TypeScript, что позволяет мне создавать плавные и интерактивные пользовательские интерфейсы. Во время работы в AlgaTop, я сыграл ключевую роль в улучшении пользовательского опыта и стимулировании роста продаж для клиентов на платформе Kaspi. Используя свои знания в области фронтенд разработки, я внес свой вклад в достижение впечатляющих результатов, включая удвоение или утроение продаж, поднятие магазинов клиентов на верхние позиции и эффективную автоматизацию рутиных задач."
   },
-  "closing-text": "Не стесняйтесь связаться со мной по электронной почте или пишите мне в Telegram.",
+  "closing-text": "Не стесняйтесь связаться со мной по e-mail или пишите мне в Telegram.",
   "appeal": "Давайте создадим нечто великое.",
   "getInTouch": "Связаться"
   },
@@ -89,6 +89,66 @@
       "icon": "/icons/light/stars.svg",
       "getInTouch": "Связаться"
       }
+  },
+  "tech": {
+    "title": "Технологический стек",
+    "subtitle": "Инструменты разработки, которыми я пользуюсь.",
+    "content": {
+      "title": "Front-end",
+      "tech-items": [
+        {
+          "name": "HTML",
+          "logo": "/images/techs/html-logo.svg",
+          "tag": "Язык"
+        },
+        {
+          "name": "CSS",
+          "logo": "/images/techs/css-logo.svg",
+          "tag": "Язык"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "/images/techs/js-logo.svg",
+          "tag": "Язык"
+        },
+        {
+          "name": "Git",
+          "logo": "/images/techs/git-logo.svg",
+          "tag": "Система контроля версий"
+        },
+        {
+          "name": "React",
+          "logo": "/images/techs/react-logo.svg",
+          "tag": "Библиотека"
+        },
+        {
+          "name": "Sass",
+          "logo": "/images/techs/sass-logo.svg",
+          "tag": "Расширение языка"
+        },
+        {
+          "name": "TypeScript",
+          "logo": "/images/techs/ts-logo.svg",
+          "tag": "Язык"
+        },
+        {
+          "name": "Tailwind",
+          "logo": "/images/techs/tailwind-logo.svg",
+          "tag": "Фреймворк"
+        },
+        {
+          "name": "Next.js",
+          "logo": "/images/techs/nextjs-logo.svg",
+          "tag": "Фреймворк"
+        },
+        {
+          "name": "Redux",
+          "logo": "/images/techs/redux-logo.svg",
+          "tag": "Менеджер состояний"
+        }
+      ]
+    
+    }
   },
   "footer": {
     "underlogo-text": "Спасибо за визит",
