@@ -84,7 +84,7 @@
   }
 }
 
-.photo-wrapper {
+.photo-block {
   position: absolute;
   top: 0;
   right: 0;
@@ -94,7 +94,7 @@
     position: initial;
   }
 
-  .photo {
+  .photo-wrapper {
     position: relative;
     width: 45rem;
     height: 45rem;
@@ -114,6 +114,7 @@
     }
 
     img {
+      width: 100%;
       position: absolute;
       border-radius: 100%;
       // filter: blur(50px);

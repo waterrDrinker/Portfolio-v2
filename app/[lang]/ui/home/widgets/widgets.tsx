@@ -3,11 +3,13 @@ import Widget from './widget';
 import styles from './widgets.module.scss';
 
 const Widgets = ({
-  dictionary,
+  dictionary
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>['home']['widgets']
+  dictionary: Awaited<ReturnType<typeof getDictionary>>['home']['widgets'];
 }) => {
-  const content = dictionary.items.map((item) => <Widget key={item.id} item={item} />);
+  const content = dictionary.items.map((item) => (
+    <Widget key={item.id} item={item} />
+  ));
 
   return (
     <section className={styles['page-container']}>

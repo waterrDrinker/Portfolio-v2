@@ -28,19 +28,22 @@
           "id": "0",
           "title": "Обо мне",
           "subtitle": "Кто я и чем занимаюсь",
-          "img": "/images/home/about-face.png"
+          "img": "/images/home/about-face.png",
+          "href": "/ru/about"
         },
         {
           "id": "1",
           "title": "Книжная полка",
           "subtitle": "Прочитанные мной книги и которые доставили мне удовольствие",
-          "img": "/images/home/Bookshelf.png"
+          "img": "/images/home/Bookshelf.png",
+          "href": "/ru/books"
         },
         {
           "id": "2",
           "title": "Технологический стек",
           "subtitle": "Инструменты разработки, приложения, устройства и игры, которыми я пользуюсь и играю.",
-          "img": "/images/home/Tech-Stack.png"
+          "img": "/images/home/Tech-Stack.png",
+          "href": "/ru/techs"
         }
       ]
     },
@@ -79,7 +82,7 @@
         "icon": "/icons/works/AlgaTop.svg",
         "title": "AlgaTop - Сервис автоматизации магазина",
         "text": "Как фронтенд-разработчик, я сыграл ключевую роль в улучшении пользовательского опыта и стимулировании роста продаж для клиентов на платформе Kaspi. Используя свои знания в области фронтенд-разработки, я внес вклад в достижение замечательных результатов, включая удвоение или утроение продаж, поднятие магазинов клиентов на верхнюю позицию и эффективную автоматизацию рутинных задач.",
-        "presentationImg": "/images/home/works/algatop-screenshot.jpg",
+        "presentationImg": "/images/home/works/algatop-screenshot-min.jpg",
         "text-btn": "Перейти на сайт"
       }
     ],

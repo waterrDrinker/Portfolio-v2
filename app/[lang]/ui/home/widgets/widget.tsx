@@ -6,12 +6,13 @@ interface Widget {
   title: string;
   subtitle: string;
   img: string;
+  href: string
 }
 
 const Widget = ({ item }: { item: Widget }) => {
   return (
     <li className={styles.widget}>
-      <Link className={styles.content} href="#!">
+      <Link className={styles.content} href={item.href}>
         <h3 className="mb-[1.6rem] text-center px-8">{item.title}</h3>
         <p className="mb-[0.5rem] px-8 text-center flex-auto">
           {item.subtitle}

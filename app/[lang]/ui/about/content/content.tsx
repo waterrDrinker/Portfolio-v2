@@ -55,7 +55,7 @@ const Content = ({
           <div className={styles['image-wrapper']}>
             <Image
               className={styles.portrait}
-              src="/images/about/photo.jpg"
+              src="/images/about/photo-min.jpg"
               width={344}
               height={443}
               alt="portrait"
