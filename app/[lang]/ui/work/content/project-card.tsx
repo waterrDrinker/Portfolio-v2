@@ -11,6 +11,7 @@ interface Work {
   text: string;
   presentationImg: string;
   'text-btn': string;
+  href: string;
 }
 
 interface Placeholder {
@@ -42,7 +43,7 @@ const ProjectCard = ({
           />
           <h3 className={styles.title}>{work.title}</h3>
           <p className={styles.text}>{work.text}</p>
-          <a className={styles.link} href="#!">
+          <a className={styles.link} href={work.href}>
             {work['text-btn']}
             <div className="w-[2.4rem] h-[2.4rem] flex items-center justify-center">
               <Image
@@ -50,7 +51,7 @@ const ProjectCard = ({
                 alt="arrow-right"
                 width={18}
                 height={12}
-                className="transition-icon"
+                className={`${styles['arrow-icon']} transition-icon`}
               />
             </div>
           </a>

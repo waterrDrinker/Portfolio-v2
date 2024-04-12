@@ -17,6 +17,16 @@
 
   .section-title {
     margin-bottom: 3.2rem;
+
+    @include bp.md {
+      margin-bottom: 2.66rem;
+    }
+    @include bp.sm {
+      margin-bottom: 2.13rem;
+    }
+    @include bp.xs {
+      margin-bottom: 1.6rem;
+    }
   }
   
   .cards-wrapper {

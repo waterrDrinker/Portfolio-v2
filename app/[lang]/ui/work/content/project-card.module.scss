@@ -54,6 +54,13 @@
     font-size: 1.8rem;
     color: var(--heading-text-color);
     font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      .arrow-icon {
+        transform: translateX(0.3rem);
+      }
+    }
   }
 
   @include bp.md {

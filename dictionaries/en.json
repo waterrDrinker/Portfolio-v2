@@ -81,8 +81,9 @@
         "icon": "/icons/works/AlgaTop.svg",
         "title": "AlgaTop - Store automation service",
         "text": "As a Frontend Developer, I played a pivotal role in enhancing the user experience and driving sales growth for clients on the Kaspi platform. Leveraging my expertise in frontend development, I contributed to achieving remarkable results, including doubling or tripling sales, elevating clients' stores to the top position, and automating routine tasks effectively.",
-        "presentationImg": "/images/home/works/algatop-screenshot-min.jpg",
-        "text-btn": "Visit Site"
+        "presentationImg": "/images/work/works/algatop-screenshot-min.jpg",
+        "text-btn": "Visit Site",
+        "href": "https://algatop.kz/"
       }
     ],
     "placeholder": {
@@ -149,6 +150,27 @@
           "tag": "State Manager"
         }
       ]
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Let’s build something awesome.",
+    "form": {
+      "title": "New message",
+      "email": {
+        "label": "Email:",
+        "placeholder": "Enter your email address"
+      },
+      "name": {
+        "label": "Name:",
+        "placeholder": "Enter your name"
+      },
+      "subject": {
+        "label": "Subject:",
+        "placeholder": "Enter subject"
+      },
+      "textarea-placeholder": "Write your message here",
+      "send-btn": "Send"
     }
   },
   "footer": {
