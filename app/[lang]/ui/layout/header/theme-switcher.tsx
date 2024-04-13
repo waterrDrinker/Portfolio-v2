@@ -19,7 +19,7 @@ const ThemeSwitcher = () => {
         alt="theme-sw"
         width={24}
         height={24}
-        className="transition-icon select-none"
+        className="transition-icon"
       />
     );
 
@@ -34,7 +34,7 @@ const ThemeSwitcher = () => {
           alt="theme-sw"
           width={24}
           height={24}
-          className="transition-icon select-none"
+          className="transition-icon"
         />
       </button>
     );
@@ -47,7 +47,7 @@ const ThemeSwitcher = () => {
         onClick={() => setTheme('dark')}
       >
         <Image
-          src={'/icons/light/Sun.svg'}
+          src={'/icons/light/Moon.svg'}
           alt="theme-sw"
           width={24}
           height={24}

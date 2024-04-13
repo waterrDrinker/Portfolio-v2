@@ -24,7 +24,7 @@ const Contactme = ({
               <Image
                 src="/icons/light/send.svg"
                 alt="send-icon"
-                className="icon"
+                className="light-icon"
                 width={24}
                 height={24}
               />

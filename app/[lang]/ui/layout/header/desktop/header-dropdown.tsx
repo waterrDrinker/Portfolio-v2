@@ -51,9 +51,11 @@ const HeaderDropdown = ({
           height={20}
         />
         {isOpen && (
-          <ul ref={listRef} className={styles['dropdown-list']}>
-            {links}
-          </ul>
+          <div className={styles['list-wrapper']}>
+            <ul ref={listRef} className={styles['dropdown-list']}>
+              {links}
+            </ul>
+          </div>
         )}
       </button>
     </>

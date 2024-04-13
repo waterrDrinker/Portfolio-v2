@@ -1,17 +1,37 @@
 {
   "header": {
     "nav": [
-      { "title": "Обо мне", "href": "/ru/about" },
-      { "title": "Работа", "href": "/ru/work" },
-      { "title": "Записи", "href": "/ru/notes" },
-      { "title": "Связь", "href": "/ru/contact" },
-      { "title": "Еще", "more": true }
+      {
+        "title": "Обо мне",
+        "href": "/ru/about",
+        "icon": "/icons/light/User"
+      },
+      {
+        "title": "Работа",
+        "href": "/ru/work",
+        "icon": "/icons/light/Bag"
+      },
+      {
+        "title": "Записи",
+        "href": "/ru/notes",
+        "icon": "/icons/light/Pen"
+      },
+      {
+        "title": "Связь",
+        "href": "/ru/contact",
+        "icon": "/icons/light/Message"
+      },
+      { "title": "Еще", "more": true, "icon": "/icons/light/More" }
     ],
     "dropdown-nav": [
       { "title": "Книжная полка", "href": "/ru/books" },
-      { "title": "Технологический стек", "href": "/ru/techs" },
-      { "title": "UI Kit этого интерфейса", "href": "/ru/ui" }
-    ]
+      { "title": "Технологический стек", "href": "/ru/techs" }
+    ],
+    "themes": {
+      "title": "Тема: ",
+      "dark": "Темная",
+      "light": "Светлая"
+    }
   },
   "home": {
     "hero": {
@@ -82,7 +102,7 @@
         "icon": "/icons/works/AlgaTop.svg",
         "title": "AlgaTop - Сервис автоматизации магазина",
         "text": "Как фронтенд-разработчик, я сыграл ключевую роль в улучшении пользовательского опыта и стимулировании роста продаж для клиентов на платформе Kaspi. Используя свои знания в области фронтенд-разработки, я внес вклад в достижение замечательных результатов, включая удвоение или утроение продаж, поднятие магазинов клиентов на верхнюю позицию и эффективную автоматизацию рутинных задач.",
-        "presentationImg": "/images/home/works/algatop-screenshot-min.jpg",
+        "presentationImg": "/images/work/works/algatop-screenshot-min.jpg",
         "text-btn": "Перейти на сайт",
         "href": "https://algatop.kz/"
       }

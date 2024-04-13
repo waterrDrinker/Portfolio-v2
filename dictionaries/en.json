@@ -1,17 +1,37 @@
 {
   "header": {
     "nav": [
-      { "title": "About", "href": "/en/about" },
-      { "title": "Work", "href": "/en/work" },
-      { "title": "Notebook", "href": "/en/notes" },
-      { "title": "Contact", "href": "/en/contact" },
-      { "title": "More", "more": true }
+      {
+        "title": "About",
+        "href": "/en/about",
+        "icon": "/icons/light/User"
+      },
+      {
+        "title": "Work",
+        "href": "/en/work",
+        "icon": "/icons/light/Bag"
+      },
+      {
+        "title": "Notebook",
+        "href": "/en/notes",
+        "icon": "/icons/light/Pen"
+      },
+      {
+        "title": "Contact",
+        "href": "/en/contact",
+        "icon": "/icons/light/Message"
+      },
+      { "title": "More", "more": true, "icon": "/icons/light/More" }
     ],
     "dropdown-nav": [
       { "title": "Bookshelf", "href": "/en/books" },
-      { "title": "Tech Stack", "href": "/en/techs" },
-      { "title": "This UI Kit", "href": "/en/ui" }
-    ]
+      { "title": "Tech Stack", "href": "/en/techs" }
+    ],
+    "themes": {
+      "title": "Theme: ",
+      "dark": "Dark",
+      "light": "Light"
+    }
   },
   "home": {
     "hero": {

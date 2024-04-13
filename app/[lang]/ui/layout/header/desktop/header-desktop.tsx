@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './header-desktop.module.scss';
 import HeaderDropdown from './header-dropdown';
-import ThemeSwitcher from './theme-switcher';
+import ThemeSwitcher from '../theme-switcher';
 import { type getDictionary } from '@/get-dictionary';
-import LocaleSwitcher from './locale-switcher';
+import LocaleSwitcher from '../locale-switcher';
 import { Locale } from '@/i18n-config';
 
 const HeaderDesktop = ({
