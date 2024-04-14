@@ -38,8 +38,7 @@
       "pronoun": "I'm",
       "name": "Grigoriy",
       "intro": "A front-end engineer helping startups turn their visions into a digital reality. I specialize in designing and building modern mobile and web-based apps.",
-      "resume-btn": "See my resume",
-      "getInTouch": "Get in touch"
+      "resume-btn": "See my resume"
     },
     "widgets": {
       "title": "Get to know me",
@@ -206,5 +205,9 @@
       ]
     },
     "elsewhere": "Elsewhere"
+  },
+  "getInTouch": {
+    "title": "Get in touch",
+    "href": "/en/contact"
   }
 }

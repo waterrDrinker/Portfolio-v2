@@ -1,18 +1,15 @@
 import { type getDictionary } from '@/get-dictionary';
 import styles from './content.module.scss';
-import { Locale } from '@/i18n-config';
 import ProjectCard from './project-card';
 
 const Content = ({
   dictionary,
-  currentLang,
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>['projects'];
-  currentLang: Locale;
+  dictionary: Awaited<ReturnType<typeof getDictionary>>;
 }) => {
-  const worksArray = Array.isArray(dictionary.works)
-    ? dictionary.works
-    : [dictionary.works];
+  const worksArray = Array.isArray(dictionary.projects.works)
+    ? dictionary.projects.works
+    : [dictionary.projects.works];
   const works = worksArray.map((work) => (
     <ProjectCard key={work.id} work={work} />
   ));
@@ -23,8 +20,8 @@ const Content = ({
         <ul className={styles['cards-wrapper']}>
           {works}
           <ProjectCard
-            placeholder={dictionary.placeholder}
-            currentLang={currentLang}
+            placeholder={dictionary.projects.placeholder}
+            getInTouch={dictionary.getInTouch}
           />
         </ul>
       </div>

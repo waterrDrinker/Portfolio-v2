@@ -12,7 +12,7 @@ const AboutPage = async ({ params }: { params: { lang: Locale } }) => {
         title={dictionary.about.title}
         subtitle={dictionary.about.subtitle}
       />
-      <Content dictionary={dictionary.about} currentLang={params.lang} />
+      <Content dictionary={dictionary} />
     </>
   );
 };

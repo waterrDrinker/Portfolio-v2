@@ -1,7 +1,7 @@
-import { Locale } from '@/i18n-config';
 import { ButtonLink } from '../../button';
 import styles from './project-card.module.scss';
 import Image from 'next/image';
+import { getDictionary } from '@/get-dictionary';
 
 interface Work {
   id: string;
@@ -24,11 +24,11 @@ interface Placeholder {
 const ProjectCard = ({
   work,
   placeholder,
-  currentLang,
+  getInTouch
 }: {
   work?: Work;
   placeholder?: Placeholder;
-  currentLang?: Locale;
+  getInTouch?: Awaited<ReturnType<typeof getDictionary>>['getInTouch']
 }) => {
   if (work) {
     return (
@@ -68,7 +68,7 @@ const ProjectCard = ({
     );
   }
 
-  if (placeholder) {
+  if (placeholder && getInTouch) {
     return (
       <li className={styles['placeholder-card']}>
         <div className={styles['icon-wrapper']}>
@@ -81,7 +81,7 @@ const ProjectCard = ({
         </div>
         <h3 className={styles['placeholder-title']}>{placeholder.title}</h3>
         <p className={styles['placeholder-subtitle']}>{placeholder.subtitle}</p>
-        <ButtonLink href={`/${currentLang}/contact`}>
+        <ButtonLink href={getInTouch.href}>
           <Image
             src="/icons/light/send.svg"
             alt="send-icon"
@@ -89,7 +89,7 @@ const ProjectCard = ({
             width={24}
             height={24}
           />
-          {placeholder.getInTouch}
+          {getInTouch.title}
         </ButtonLink>
       </li>
     );

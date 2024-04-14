@@ -3,16 +3,13 @@ import styles from './content.module.scss';
 import Paragraph from './paragraph';
 import Image from 'next/image';
 import { ButtonLink } from '@/app/[lang]/ui';
-import { Locale } from '@/i18n-config';
 
 const Content = ({
   dictionary,
-  currentLang,
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>['about'];
-  currentLang: Locale;
+  dictionary: Awaited<ReturnType<typeof getDictionary>>;
 }) => {
-  const wordsArray = dictionary['closing-text'].split(' ')
+  const wordsArray = dictionary.about['closing-text'].split(' ')
   const closingText = wordsArray.map((word, i) => {
     switch(word) {
       case 'e-mail':
@@ -33,12 +30,12 @@ const Content = ({
         <div id="text-content" className={styles['text-content']}>
           <div className={styles['main-text']}>
             <Paragraph
-              title={dictionary['iam-paragraph'].title}
-              text={dictionary['iam-paragraph'].text}
+              title={dictionary.about['iam-paragraph'].title}
+              text={dictionary.about['iam-paragraph'].text}
             />
             <Paragraph
-              title={dictionary['ido-paragraph'].title}
-              text={dictionary['ido-paragraph'].text}
+              title={dictionary.about['ido-paragraph'].title}
+              text={dictionary.about['ido-paragraph'].text}
             />
           </div>
 
@@ -47,7 +44,7 @@ const Content = ({
           </div>
 
           <div className={styles['appeal-text']}>
-            <p>{dictionary.appeal}</p>
+            <p>{dictionary.about.appeal}</p>
           </div>
         </div>
 
@@ -62,7 +59,7 @@ const Content = ({
             />
           </div>
           <div className={styles['button-wrapper']}>
-            <ButtonLink href={`/${currentLang}/contact`}>
+            <ButtonLink href={dictionary.getInTouch.href}>
               <Image
                 src="/icons/light/send.svg"
                 alt="send-icon"
@@ -71,13 +68,13 @@ const Content = ({
                 height={24}
                 priority
               />
-              {dictionary.getInTouch}
+              {dictionary.getInTouch.title}
             </ButtonLink>
           </div>
         </div>
 
         <div className={styles['button-wrapper--outside']}>
-          <ButtonLink href={`/${currentLang}/contact`}>
+          <ButtonLink href={dictionary.getInTouch.href}>
             <Image
               src="/icons/light/send.svg"
               alt="send-icon"
@@ -85,7 +82,7 @@ const Content = ({
               width={24}
               height={24}
             />
-            {dictionary.getInTouch}
+            {dictionary.getInTouch.title}
           </ButtonLink>
         </div>
       </div>

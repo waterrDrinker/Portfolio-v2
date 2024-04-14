@@ -11,7 +11,7 @@ const WorkPage = async ({ params }: { params: { lang: Locale } }) => {
         title={dictionary.work.title}
         subtitle={dictionary.work.subtitle}
       />
-      <Content dictionary={dictionary.projects} currentLang={params.lang} />
+      <Content dictionary={dictionary} />
     </>
   );
 };

@@ -1,12 +1,12 @@
 import styles from './hero.module.scss';
-import { Button } from '@/app/[lang]/ui';
+import { Button, ButtonLink } from '@/app/[lang]/ui';
 import { type getDictionary } from '@/get-dictionary';
 import Image from 'next/image';
 
 const Hero = ({
   dictionary,
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>['home']['hero']
+  dictionary: Awaited<ReturnType<typeof getDictionary>>
 }) => {
   
   return (
@@ -26,14 +26,14 @@ const Hero = ({
         </div>
         <div className={styles['content']}>
           <h1 className="title">
-            <span>{dictionary.pronoun}</span> {dictionary.name}
+            <span>{dictionary.home.hero.pronoun}</span> {dictionary.home.hero.name}
           </h1>
           <p className={styles.subtitle}>
-            {dictionary.intro}
+            {dictionary.home.hero.intro}
           </p>
           <div className={styles.btns}>
-            <Button>{dictionary['resume-btn']}</Button>
-            <Button variant="secondary">{dictionary.getInTouch}</Button>
+            <Button>{dictionary.home.hero['resume-btn']}</Button>
+            <ButtonLink href={dictionary.getInTouch.href} variant="secondary">{dictionary.getInTouch.title}</ButtonLink>
           </div>
         </div>
         <div className="w-full"></div>

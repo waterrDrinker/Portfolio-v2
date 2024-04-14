@@ -208,5 +208,9 @@
       ]
     },
     "elsewhere": "В других сервисах"
+  },
+  "getInTouch": {
+    "title": "Связаться",
+    "href": "/ru/contact"
   }
 }

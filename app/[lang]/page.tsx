@@ -7,10 +7,10 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
   
   return (
     <>
-      <Hero dictionary={dictionary.home.hero} />
+      <Hero dictionary={dictionary} />
       <Projects dictionary={dictionary.projects} />
       <Widgets dictionary={dictionary.home.widgets} />
-      <Contactme dictionary={dictionary.home.contactme} currentLang={params.lang} />
+      <Contactme dictionary={dictionary} />
     </>
   );
 }
